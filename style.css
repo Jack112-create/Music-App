@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("https://images.pexels.com/photos/1626481/pexels-photo-1626481.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+header {
+  margin: 50px 0px 30px 0px;
+  background-color: black;
+  padding: 25px 50px;
+  border: 3px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+header h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 40px;
+}
+
+header p {
+  font-size: 20px;
+}
+
+.pads {
+  background: lightblue;
+  width: 100%;
+  display: flex;
+}
+
+.pads > div /* Selects all the divs inside the div with a class name of pads */ {
+  height: 100px;
+  width: 100px;
+  flex: 1;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.pads > div:hover {
+  color: black;
+}
+
+.pad1 {
+  background: #60d394;
+}
+
+.pad2 {
+  background: #d36060;
+}
+
+.pad3 {
+  background: #c060d3;
+}
+
+.pad4 {
+  background: #d3d160;
+}
+
+.pad5 {
+  background: #606bd3;
+}
+
+.pad6 {
+  background: #60c2d3;
+}
+
+.visual > div {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  bottom: 0%;
+  left: 20%;
+  bottom: 0%;
+  z-index: 1;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+
+  100% {
+    bottom: 0%;
+    left: 80%;
+  }
+}
